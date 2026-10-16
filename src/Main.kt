@@ -1,61 +1,67 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    println("Hello World!")
 
-    //variables
-    //var(mutables-cambian) y val (inmutables-no cambian)
+    //Estructura de Control
 
-    val num0 = 2
-    val num1 : Int = 10
-    //num0 = 10 va a dar error porque es una variable inmutable
-    val edad = 25
-    var num2 : Int //cuando es minima se puede declarar sin inicializar o sino solo asi var num2 : Int =10
-    var num3 : Int = 15
-    var num4 = 0
-    num4 = 20 //se puede cambiar el valor de una variable mutable
+    val number = 5
+    //IF
+    if (number % 2 == 0) {
+        println("El num es par")
 
-    //Operadores (+ - * / %)
-    var nuevoNum = num0 + num1
+    } else {
+        println("El num es impar")
+    }
 
-    val numA=10
-    val numB=20
-    val total = numA + numB
-    println(total)
+    //IF anidado
+    if (number >= 7) {
+        println("Aprobo la materia")
+    } else if ((number >= 5) and (number < 7)) {
+        println("Supletorio")
+    } else {
+        println("Reprobado ")
+    }
 
-    println("la suma es: " + total) //no esta mal pero tampoco bien
-    println("la suma es: $total") // Correcta
+    //Switch
+    val opcion = 1
+    when (opcion) {
+        1 -> println("Uno")
+        2 -> println("Dos")
+        3 -> println("Tres")
+        else -> println("Valor incorrecto")
+    }
+    println("Escriba")
+    val opcion1 = readln().toInt()
+    when (opcion1) {
+        1 -> println("Uno")
+    }
 
-    //Ingreso de datos por teclado
-    println("Ingrese nombre: ")
-    val nombre = readln()
-    println("Ingrese apellido: ")
-    val apellido = readln()
-    println("Su nombre completo es: $nombre $apellido")
+    //For
+    for (i in 1..10) { //ascendente
+        println(i)
+    }
 
-    println("Ingrese edad: ")
-    val edad1 = readln().toInt() //convertir a entero con el .to se puede convertir a otros tipos de datos
-    println("Su nombre completo es: $nombre $apellido con edad $edad1 ")
+    for (i in 10 downTo 1) {// descender
+        println(i)
+    }
+    for (i in 1..10 step 2) { //para ir saltar  de 2 en 2
+        println(i)
+    }
+    for (i in 10 downTo 1 step 2) {// descender
+        println(i)
+    }
 
+    //While
+    var i = 1 //siempre con var
+    while (i <= 10) {
+        println(i)
+        i++
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Do-While
+    var j = 0
+    do {
+        println(j)
+        j++
+    } while (j <= 10)
 
 
 }
