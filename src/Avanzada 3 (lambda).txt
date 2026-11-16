@@ -1,0 +1,27 @@
+Avanzada 3 
+
+
+Funciones n-arias
+	Una función tiene la capacidad de no recibir parámetros como de recibir infinitos parámetros 
+
+	de 1-3 parámetros es una función bien hecha
+	de 4-5 parámetros hay que revisar diseño
+	6+ probablemente debe refactorizarse 
+
+En prog Funcional las funciones son tratadas como datos. 
+N-arias aparecen con colecciones: map, filter, reduce, currying, composición y lambdas.
+
+UNARIA: ningún parámetro
+UNARIA:  1 parámetro
+BINARIA: 2 parámetros 
+TERNARIA: 3 parámetros
+CUATERNARIA: 4 parámetros
+N-ARIA: más de 4 parámetros 
+
+
+Expresiones Lambda: 
+		Nos permite trabajar con funciones como valores de forma mas directa
+			Sintaxis general:
+						{parámetros->cuerpo función} 
+
+
