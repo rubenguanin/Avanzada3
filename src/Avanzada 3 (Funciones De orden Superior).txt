@@ -1,0 +1,21 @@
+AVANZADA 3
+
+Funciones de Orden Superior:
+			Funciones que reciben otras funciones como parametro (más usada) o devuelve funciones como restultado 
+			
+			(Parámetro)-> TipoDeRetorno
+	
+	Funciones de Primera clase: 
+		-Cuando se puede guardar en variables 
+		-
+		-
+Provienen del calculo lambda 
+Trata funciones como valores
+Permite abstraccion de comportamiento 
+Facilita la composicion Funcional
+Son base de map,filter,reduce
+Favorece prog declarativa
+Ayuda a manteneer inmutabilidad 
+Elevacion nivel de abstraccion del software 
+
+				
